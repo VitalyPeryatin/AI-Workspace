@@ -1,0 +1,54 @@
+[0m
+> nest-direct · deepseek-v4-flash:0731
+[0m
+[0m← [0mWrite nest-exp/tasks/task_depth0.py
+Wrote file successfully.
+[0m
+[0m$ [0mcd /Users/vitalyperyatin/AI_Workspace/nest-exp && python3 -m doctest -v tasks/task_depth0.py
+Trying:
+    fizzbuzz(1)
+Expecting:
+    ['1']
+ok
+Trying:
+    fizzbuzz(3)
+Expecting:
+    ['1', '2', 'Fizz']
+ok
+Trying:
+    fizzbuzz(5)
+Expecting:
+    ['1', '2', 'Fizz', '4', 'Buzz']
+ok
+Trying:
+    fizzbuzz(15)[14]
+Expecting:
+    'FizzBuzz'
+ok
+Trying:
+    fizzbuzz(16)[15]
+Expecting:
+    '16'
+ok
+1 items had no tests:
+    task_depth0
+1 items passed all tests:
+   5 tests in task_depth0.fizzbuzz
+5 tests in 2 items.
+5 passed and 0 failed.
+Test passed.
+[0m
+Готово.
+
+**Что сделано:**
+- Создан файл `/Users/vitalyperyatin/AI_Workspace/nest-exp/tasks/task_depth0.py`.
+- Реализована функция `fizzbuzz(n)`, обрабатывающая все 4 случая: Fizz (делится на 3), Buzz (делится на 5), FizzBuzz (делится на 3 и 5), иначе `str(число)`.
+
+**Doctest-примеры** покрывают все случаи:
+- `fizzbuzz(1)` → `['1']` (обычное число)
+- `fizzbuzz(3)` → содержит `'Fizz'`
+- `fizzbuzz(5)` → содержит `'Buzz'`
+- `fizzbuzz(15)[14]` → `'FizzBuzz'` (делится на 3 и 5)
+- `fizzbuzz(16)[15]` → `'16'`
+
+**Результат проверки:** `python3 -m doctest -v tasks/task_depth0.py` — 5 тестов, 5 passed, 0 failed. Тест прошёл успешно. Оставшихся проблем нет.
